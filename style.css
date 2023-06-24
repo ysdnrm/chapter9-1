@@ -1,0 +1,19 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.position {
+  /*(relative)は要らなかった*/
+  position: absolute;
+  right: 40px;
+  top: 100px;
+}
+
+.fa-brands {
+  /*ここにポジションのpx書くと二つのアイコンが重なってしまった。
+  個々のアイコンのところではなく、アイコンのまとまりで指定する。*/
+  size: 32px;
+}
